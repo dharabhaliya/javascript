@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY13-1</title>
+</head>
+<body>
+    <center>
+        <h1>FIZZBUZZ</h1>
+        <hr>
+        <h1>Enter Your Starting Point : </h1>
+        <input type="number" id="int1">
+
+        <h1>Enter Your Ending Point : </h1>
+        <input type="number" id="int2"> 
+
+        <h1 id="ans1"></h1>
+    </center>
+</body>
+</html>
+<script>
+    let start = document.getElementById("int1").value 
+    let end = document.getElementById("int2").value
+
+    if(start === "" && end === "")
+    {
+        document.getElementById("ans1").innerHTML = "Invalid Number"
+    }
+    else
+    {
+        for(let i=start; i<=end; i++)
+        {
+            if(i%3 === 0 && i%5 === 0)
+            {
+                document.getElementById("ans1").innerHTML += i+" FizzBuzz"
+            }
+            else if(i%3 === 0)
+            {
+                document.getElementById("ans1").innerHTML += i+" Fizz"
+            }
+            else if(i%5 === 0)
+            {
+                document.getElementById("ans1").innerHTML += i+" Buzz"
+            }
+            else
+            {
+                document.getElementById("ans1").innerHTML += i
+            }
+            document.getElementById("ans1").innerHTML += "<br>"
+        }
+    }
+
+</script>
+
+
+
