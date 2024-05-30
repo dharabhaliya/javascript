@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY20-5</title>
+</head>
+<body>
+    <center>
+        <h1>Array : [75, 82, 60, 90, 95]</h1>
+
+        <h1 id="ans"></h1>
+    </center>
+</body>
+</html>
+<script>
+    let examScores = [75, 82, 60, 90, 95];
+
+    document.getElementById("ans").innerHTML = "Ans : " + examScores.every(score => score >= 60)
+</script>

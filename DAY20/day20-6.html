@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY20-6</title>
+</head>
+<body>
+    <center>
+        <h1>Array : [72, 85, 90, 101, 99, 105]</h1>
+        
+        <h1 id="ans"></h1>
+    </center>
+</body>
+</html>
+<script>
+    let temperatures = [72, 85, 90, 101, 99, 105];
+
+    document.getElementById("ans").innerHTML = "Ans : " + temperatures.some(temp => temp > 100)
+</script>
