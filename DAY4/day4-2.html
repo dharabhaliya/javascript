@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY4</title>
+</head>
+<body>
+    <center>
+        <h1>BODY MASS INDEX</h1>
+        <hr>
+
+        <h1>Enter weight : </h1>
+        <input type="text" id="in1">
+
+        <h1>Enter height : </h1>
+        <input type="text" id="in2">
+
+        <h1 id="ans"></h1>
+    </center>
+</body>
+</html>
+<script>
+    let a = document.getElementById("in1").value
+    let b = document.getElementById("in2").value
+
+    let BMI = a / (b * b)
+
+    document.getElementById("ans").innerHTML = "BMI = " + BMI.toFixed(2)
+</script>

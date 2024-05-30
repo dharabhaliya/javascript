@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY5-1</title>
+</head>
+<body>
+    <center>
+        <h1>TEMPERTURE</h1>
+        <hr>
+
+        <h1>enter your area temperture : </h1>
+        <input type="text" id="in1">
+
+        <h1 id="ans"></h1>
+    </center>
+</body>
+</html>
+<script>
+    // 0 = freezing
+    // 0 - 10 = chilly
+    // 11 - 20 = cool
+    // above 20 = warm
+
+    let temperture = document.getElementById("in1").value
+
+    if(temperture === ""){
+        document.getElementById("ans").innerHTML = "enter valid temperture"
+    }else{ 
+        if(temperture < 0){
+        document.getElementById("ans").innerHTML = "it's freezing cold..."
+    }else if(temperture >= 0 && temperture < 10){
+        document.getElementById("ans").innerHTML = "it's chill..."
+    }else if(temperture >= 11 && temperture < 20){
+        document.getElementById("ans").innerHTML = "it's cool.."
+    }else{
+        document.getElementById("ans").innerHTML = "it's warm..."
+    }
+}
+    
+</script>

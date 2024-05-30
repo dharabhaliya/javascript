@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY10-2</title>
+</head>
+<body>
+    <center>
+        <h1>CALCULATOR</h1>
+        <hr>
+
+        <h1>Enter  operator :</h1>
+        <input type="text" id = "inn">
+        <h1>Enter  a value :</h1>
+        <input type="text" id = "inn1">
+        <h1>Enter a value :</h1>
+        <input type="text" id = "inn2">
+
+        <h1 id="ans"></1>
+    </center>
+</body>
+</html>
+<script>
+     var a = document.getElementById("inn").value 
+     var b = document.getElementById("inn1").value 
+     var c = document.getElementById("inn2").value 
+     var d 
+    if(a === "")
+    {
+        document.getElementById("ans").innerHTML = ""
+    }
+    else
+    {
+        switch(a)
+        {
+            case "+" :
+                d = +b + +c
+                document.getElementById("ans").innerHTML = "Ans is :" + d;
+                break
+            case "-" :
+                 d = +b - +c
+                document.getElementById("ans").innerHTML = "Ans is :" + d;
+                break   
+            case "*" :
+                d = +b * +c
+                document.getElementById("ans").innerHTML = "Ans is :" + d;
+                break 
+            case "/" :
+                d = +b / +c
+                document.getElementById("ans").innerHTML = "Ans is :" + d;
+                break 
+
+            default:
+                document.getElementById("ans").innerHTML = " Invlid operator  ";
+                break           
+        }
+    }
+</script>

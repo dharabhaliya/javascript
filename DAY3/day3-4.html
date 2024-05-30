@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY3-4</title>
+</head>
+<body>
+    <center>
+        <h1>AVERAGE MARKS</h1>
+        <hr>
+
+        <h1>enter first subject 's marks :</h1>
+        <input type="text" id="in1">
+
+        <h1>enter second subject 's marks :</h1>
+        <input type="text" id="in2">
+
+        <h1>enter thired subject 's marks :</h1>
+        <input type="text" id="in3">
+
+        <h1 id="average"></h1>
+    </center>
+</body>
+</html>
+<script>
+    let a = document.getElementById("in1").value
+    let b = document.getElementById("in2").value
+    let c = document.getElementById("in3").value
+
+    let total = (+a + +b + +c) / 3
+
+    document.getElementById("average").innerHTML = total
+</script>

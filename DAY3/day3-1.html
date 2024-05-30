@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY3-1</title>
+</head>
+<body>
+    <center>
+        <h1>RESULT</h1>
+        <hr>
+
+        <h1> enter marks of maths :</h1>
+        <input type="text" id="in1">
+
+        <h1> enter marks of science :</h1>
+        <input type="text" id="in2">
+
+        <h1> enter marks of english :</h1>
+        <input type="text" id="in3">
+
+        <h1> enter marks of gujrati :</h1>
+        <input type="text" id="in4">
+
+        <h1> enter marks of hindi :</h1>
+        <input type="text" id="in5">
+
+        <h1 id="percentage"></h1>
+    </center>
+</body>
+</html>
+
+<script>
+    let a = document.getElementById("in1").value
+    let b = document.getElementById("in2").value
+    let c = document.getElementById("in3").value
+    let d = document.getElementById("in4").value
+    let e = document.getElementById("in5").value
+
+    let f =(+a + +b + +c + +d + +e *100) / 500
+
+    document.getElementById("percentage").innerHTML = f
+</script>

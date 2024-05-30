@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY10-5</title>
+</head>
+<style>
+    select{
+        height: 30px;
+        width: 300px;
+        background-color: rgb(224, 217, 217);
+        border: none;
+        /* opacity: 10%; */
+        color: rgb(12, 12, 12);
+        border-radius: 10px;
+    }
+    
+    button{
+        height: 30px;
+        width: 60px;
+        background-color: rgb(224, 217, 217);
+        border: none;
+        /* opacity: 10%; */
+        color: rgb(12, 12, 12);
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <center>
+        <h1>STARBUCKS MENU</h1>
+        <hr>
+
+        <select name="" id="inn">
+            <option value="Java Chip Frappuccino">Java Chip Frappuccino</option>
+            <option value="Caffe Americano">Caffe Americano</option>
+            <option value="Cold coffee">Cold coffee</option>
+            <option value="Double Chocolate Chip Frappuccino  ">Double Chocolate Chip Frappuccino   </option>
+            <option value="Creamy Spinach and Corn Pocket">Creamy Spinach and Corn Pocket</option>
+            <option value="Cappuccino">Cappuccino</option>
+            <option value="Double Chocolate Chip Cookie">Double Chocolate Chip Cookie</option>
+        </select>
+    
+    <br>
+        <h1 id="ans"></h1>
+        
+        <button id="go">Reload</button>
+    
+    </center>
+</body>
+</html>
+<script>
+ var a = document.getElementById("inn").value 
+
+// ---------------------------------------
+
+               const refreshButton = document.getElementById("go");
+
+               // Add event listener to the button
+               refreshButton.addEventListener('click', function() 
+               {
+                   // Reload the page
+                   location.reload();
+               });
+               
+// ---------------------------------------
+   if(a === "")
+   {
+       document.getElementById("ans").innerHTML = ""
+   }
+   else
+   {
+        switch(a)
+        {
+            case "Java Chip Frappuccino" : document.getElementById("ans").innerHTML = "652"
+            break
+
+            case "Caffe Americano" : document.getElementById("ans").innerHTML = "526"
+            break
+
+            case "Cold coffee" : document.getElementById("ans").innerHTML = "890"
+            break
+
+            case "Double Chocolate Chip Frappuccino" : document.getElementById("ans").innerHTML = "630"
+            break
+
+            case "Creamy Spinach and Corn Pocket" : document.getElementById("ans").innerHTML = "1000"
+            break
+
+            case "Cappuccino" : document.getElementById("ans").innerHTML = "780"
+            break
+
+            case "Double Chocolate Chip Cookie" : document.getElementById("ans").innerHTML = "410"
+            break
+
+            default : document.getElementById("ans").innerHTML = "Inavlable..."
+            break
+        }
+    }
+</script>
