@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY16-2</title>
+</head>
+<body>
+    <center>
+        <h1>GREETING MASSAGE</h1>
+        <hr>
+    
+        <h1>Enter Any Name : </h1>
+        <input type="text" id="innt">
+
+        <h1 id="ans"></h1>
+    </center>
+</body>
+</html>
+
+<script>
+    let user_name = document.getElementById("innt").value
+
+if(user_name === "")
+{
+    document.getElementById("ans").innerHTML = "Invalid Name"
+}
+else
+{
+    function message(user_name)
+    {
+        document.getElementById("ans").innerHTML = "Hello, "+user_name+"<br>"
+        function msg()
+        {
+            document.getElementById("ans").innerHTML += "How Are You ???"
+        }
+        msg()
+    }
+    message(user_name)
+}
+
+</script>
