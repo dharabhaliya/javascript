@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY17-1</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function countVowels(str){
+        const vowels = /[aeiouAEIOU]/g;
+        const matches = str.match(vowels);
+        return matches ? matches.length : 0;
+
+    }
+
+    let inputString = "This is an example string.";
+    let vowelCount = countVowels(inputString);
+    console.log(`Number of vowels: ${vowelCount}`);  // Output: Number of vowels: 7
+    
+
+</script>
