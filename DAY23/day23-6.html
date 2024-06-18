@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY23-6</title>
+</head>
+<body>
+    <center>
+        <h1>ADD 20 TO EACH STUDENTS MARKS</h1>
+        <h1 id="ans"></h1>
+    </center>
+</body>
+</html>
+<script>
+    let students = [
+        {name : "Dhara" , Roll : 19 , Marks : 45},
+        {name : "Hetvi" , Roll : 29 , Marks : 75},
+        {name : "Mansi" , Roll : 7 , Marks : 35},
+        {name : "Komal" , Roll : 13 , Marks : 65},
+    ];
+    // for(let i = 0 ; i < students.length ; i++){
+    //     // console.log(students[i].name.toUpperCase())
+    //     document.getElementById("ans").innerHTML +=  students[i].name.toUpperCase() + "<br>"
+    // }
+
+    // let ans = students.filter(students => students.Marks > 60).map(students => students.name);
+    
+    // // document.getElementById("ans").innerHTML = ans + "<br>"
+    // console.log(ans)
+
+     students.forEach( students => students.Marks += 20);
+    // document.getElementById("ans").innerHTML = students
+    console.log(students)
+</script>

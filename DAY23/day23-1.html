@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY23-1</title>
+</head>
+<body>
+    <center>
+        <h1>CAPITAL LETTERS</h1>
+        <hr>
+        <h1 id="ans"></h1>
+    </center>
+
+</body>
+</html>
+<script>
+    let students = [
+        {name : "Dhara" , Roll : 19 , Marks : 45},
+        {name : "Hetvi" , Roll : 29 , Marks : 55},
+        {name : "Mansi" , Roll : 7 , Marks : 35},
+        {name : "Komal" , Roll : 13 , Marks : 65},
+        {name : "Bhakti" , Roll : 33 , Marks : 15},
+        {name : "Harmi" , Roll : 23 , Marks : 75}
+    ];
+    for(let i = 0 ; i < students.length ; i++){
+        // console.log(students[i].name.toUpperCase())
+        document.getElementById("ans").innerHTML +=  students[i].name.toUpperCase() + "<br>"
+    }
+</script>
