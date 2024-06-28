@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY19-4</title>
+</head>
+
+<body>
+    <center>
+        <h1>QUESTION-4</h1>
+        <hr>
+        <h1 id="ans"></h1>
+    </center>
+</body>
+
+</html>
+
+<script>
+
+    let arr = ["Lion", "Tiger", "Elephant"]
+
+    document.getElementById("ans").innerHTML = "All Animal Of an Arrary is : " + arr
+    arr.unshift("Giraffe")
+    arr.unshift("Zebra")
+    console.log(arr)
+    document.getElementById("ans").innerHTML += "<br>After Adding Giraffe and Zebra is : " + arr
+
+
+</script>

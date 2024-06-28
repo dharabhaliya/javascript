@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY19-5</title>
+</head>
+
+<body>
+    <center>
+        <h1>QUESTION-5</h1>
+        <hr>
+        <h1 id="ans"></h1>
+    </center>
+
+
+</body>
+
+</html>
+
+<script>
+    let arr = ["a", "b", "c", "d", "e"]
+
+    document.getElementById("ans").innerHTML = "All Characters Of an Arrary is : " + arr + "<br>"
+    for (let i = arr.length - 1; i >= 0; i--) {
+        arr.pop(i)
+    }
+    console.log(arr)
+    document.getElementById("ans").innerHTML += "All Characters Remove From an Arrary" + arr
+
+</script>

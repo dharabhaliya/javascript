@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY19-13</title>
+</head>
+
+<body>
+    <center>
+        <h1>QUESTION-13</h1>
+        <h1 id="ans"></h1>
+    </center>
+
+</body>
+
+</html>
+
+<script>
+    let arr = ["Rose", "Marigold", "Jasmine"]
+
+    document.getElementById("ans").innerHTML = "All Flower Of an Arrary is : " + arr
+    arr.unshift("Lily")
+    arr.unshift("Tulip")
+    arr.unshift("Sunflower")
+    console.log(arr)
+    document.getElementById("ans").innerHTML += "<br>After Adding Lily, Tulip and Sunflower is : " + arr
+
+</script>
