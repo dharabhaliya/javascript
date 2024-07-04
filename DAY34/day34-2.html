@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY34-2</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let arr = [1 , 2 , 3 , 4 , 5]
+    Array.prototype.map = function(el){
+        let nweArray = []
+        for(let i = 0 ; i < this.length ; i++){
+            if(el(this[i])){
+                nweArray.push((this[i]))
+            }
+
+        }
+        return nweArray
+    }
+
+    let ans = arr.map((el)=>{
+        return el % 2 == 0
+    })
+
+    console.log(ans)
+</script>
