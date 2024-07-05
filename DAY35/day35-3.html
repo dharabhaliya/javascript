@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY35-2</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Animal {
+      constructor(name) {
+        this.name = name;
+      }
+    
+      eat() {
+        console.log(`${this.name} is eating.`);
+      }
+    
+      sleep() {
+        console.log(`${this.name} is sleeping.`);
+      }
+    
+      sound() {
+        console.log(`${this.name} makes a sound.`);
+      }
+    }
+    
+    class Cat extends Animal {
+      constructor(name) {
+        super(name);
+      }
+    
+      sound() {
+        console.log(`${this.name} says: Meow!`);
+      }
+    }
+    
+    class Dog extends Animal {
+      constructor(name) {
+        super(name);
+      }
+    
+      sound() {
+        console.log(`${this.name} says: Woof!`);
+      }
+    }
+    
+    
+    const myCat = new Cat('Whiskers');
+    myCat.eat();
+    myCat.sleep();
+    myCat.sound();
+    
+    const myDog = new Dog('Max');
+    myDog.eat();
+    myDog.sleep();
+    myDog.sound();
+    </script>
